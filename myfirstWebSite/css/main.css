@@ -1,0 +1,241 @@
+* {margin: 0;
+padding: 0;
+}
+.contaner{
+    display: flex;
+   flex-direction: column;
+}
+
+.header{
+    grid-area: header;
+    background: url("https://www.outsideonline.com/sites/default/files/styles/full-page/public/2020/01/10/trey-thru-hiking_h.jpg?itok=IG04AVB4");
+    text-align: center;
+    font-family: 'Yellowtail', cursive;
+    font-size: 20px;
+    background-size: cover;
+    
+}
+.nav{
+
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+position: fixed;
+}
+#mymenu{
+    text-align: center;
+}
+.nav #mysearch{
+    width: 80px;
+    flex-wrap: wrap;
+    background-color: initial;
+    color: black;
+    font-family: 'Pacifico', cursive;
+}
+
+.nav li{
+    text-align: center;
+    padding: 25px;
+    align-items: flex-end;
+    
+    
+}
+.nav li a{
+    color: black;
+    font-family: 'Pacifico', cursive;
+    text-decoration: none ;
+    text-align: center;
+
+}
+li{
+    text-align: center;
+    display: inline;
+    align-items: center;
+}
+#button{
+    background: bottom;
+    width: 150px;
+    height: 40px;
+    
+    border-radius: 180px/100px;
+    box-shadow: rebeccapurple 10px 10px 18px;
+    font-family: 'Pacifico', cursive;
+    font-size: larger;
+    
+}
+
+main{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+span{
+    color: purple;
+}
+main p{
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 120px;
+    padding-right: 120px;
+    line-height: 30px;
+    font-size: 20px;
+    text-indent: 50px;
+}
+ .parent{
+display: grid;
+grid-template-columns: 350px 350px 350px;
+ grid-template-rows: 350px auto;
+ grid-gap: 90px;
+flex-wrap: wrap;
+justify-content: center;
+
+}
+.child{
+
+    align-items: center;
+    box-shadow:10px 10px 24px rgb(69, 190, 255);
+    border-radius: 45px;
+    flex-wrap: wrap;
+}
+.parent>.anime{
+    background: url("https://sun6-16.userapi.com/wrbg2ITx74RK1U1hjZU_nS9xCftJYz1MQUHrQQ/tkX0OJGmL8w.jpg");
+    background-size: cover;
+    animation: animes 4s ease-in-out 0s infinite;
+}
+@keyframes animes{
+    0%{
+        background: url("https://sun6-16.userapi.com/wrbg2ITx74RK1U1hjZU_nS9xCftJYz1MQUHrQQ/tkX0OJGmL8w.jpg");
+        background-size: cover;
+    }
+    50%{
+        background: url("https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/53628816_10216291216946484_989273350729629696_o.jpg?_nc_cat=103&_nc_sid=110474&efg=eyJpIjoidCJ9&_nc_ohc=Ij2v1iD1mecAX-zuiIJ&_nc_ht=scontent-lga3-1.xx&_nc_tp=14&oh=8a61ff1c04a4d5d94db8964cbbcad839&oe=5F239A30");
+        background-size: cover;
+    }
+   
+    100%{
+        background: url("https://sun6-14.userapi.com/ear9t9TdQ7c6Kx0SA02gFELIxWUOYsAF1aaMWQ/yGO89QUxEO0.jpg");
+        background-size: cover;
+    }
+}
+.parent>.box2{
+    background: url("https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-size: cover;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: 'Yellowtail', cursive;
+}
+.parent>.pics{
+    background: url("https://www.alpinetrailridgeinn.com/wp-content/uploads/sites/46/2019/04/hiking-in-Estes-park.jpg");
+    background-size: cover;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: 'Yellowtail', cursive;
+    animation: mount 4s ease-in-out 0s infinite;
+
+}
+@keyframes mount{
+    0%{
+        background: url("https://i0.wp.com/happiestoutdoors.ca/wp-content/uploads/2019/03/dream-best-colorado-lake-hikes-min.jpg?resize=1000%2C500&ssl=1");
+        background-size: cover;
+    }
+    50%{
+        background: url("https://static.rootsrated.com/image/upload/s--qeu36a7M--/t_rr_large_natural/g60eidt0t5q636olwouw.jpg");
+        background-size: cover;
+    }
+    100%{
+        background: url("https://images.theoutbound.com/contents/116659/assets/1485802343424?w=1200&h=630&fit=crop&auto=format&s=a3d434e81cbe95f2d5b0cefd1b8981e9");
+        background-size: cover;
+    }
+}
+.view{
+display: grid;
+grid-template-columns: 350px 350px 350px;
+ grid-template-rows: 350px 350px;
+ grid-gap: 50px 50px;
+flex-wrap: wrap;
+justify-content: center;
+grid-template-areas: 
+"tell1 tell2 tell3"
+"tell4 tell5 tell5"
+;
+}
+.call{
+    align-items: center;
+    box-shadow:10px 10px 24px rgb(69, 190, 255);
+    flex-wrap: wrap;
+}
+.view> .tell5{
+    grid-area: tell5;
+    text-align: left;
+    padding: 30px;
+    flex-wrap: wrap;
+    line-height: 25px;
+    text-indent: 30px;
+
+}
+.view>.tell1{
+    grid-area: tell1;
+    text-align: left;
+    padding: 30px;
+    flex-wrap: wrap;
+    line-height: 25px;
+    text-indent: 30px;
+}
+.view>.tell2{
+    grid-area: tell2;
+    text-align:left;
+    padding: 30px;
+    flex-wrap: wrap;
+    line-height: 25px;
+    text-indent: 30px;
+}
+.view>.tell3{
+    grid-area: tell3;
+    text-align: left;
+    padding: 30px;
+    flex-wrap: wrap;
+    line-height: 25px;
+    text-indent: 30px;
+}
+.view>.tell4{
+    grid-area: tell4;
+    text-align: left;
+    padding: 30px;
+    flex-wrap: wrap;
+    line-height: 25px;
+    text-indent: 30px;
+}
+
+footer{
+    padding-left: 70px;
+    display: grid;
+   grid-template-columns: 450px 450px;
+   grid-template-rows: 150px;
+ grid-gap: 150px 50px;
+flex-wrap: wrap;
+    grid-area: footer;
+    font-family: 'Yellowtail', cursive;
+
+}
+.phon{
+    grid-row: 1/2;
+    grid-column: 1/2;
+justify-content: left;
+padding: 50pxs;
+border: lawngreen;
+}
+.insta{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    width: 100px;
+    height: 100px;
+    justify-content:right;
+  
+
+}
+img{
+    width: 150px;
+    height: 150px;
+}
